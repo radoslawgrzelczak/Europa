@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nawigacja</title>
+    <style>
+      ul {
+        list-style: none;
+        float: left;
+      }
+
+      ul > li {
+        margin: 0;
+        padding: 0;
+        float: left;
+        position: relative;
+        height: 30px;
+      }
+
+      ul > li > a {
+        padding: 10px;
+        color: #444;
+        text-decoration: none;
+      }
+
+      ul > li > a:hover,
+      ul > li:hover > a {
+        color: #de5f44;
+        text-decoration: underline;
+      }
+
+      ul > li ul {
+        padding: 0;
+        position: absolute;
+        display: none;
+        left: 0px;
+        top: 30px;
+        width: 200px;
+        text-align: left;
+        background-color: #fcfcfc;
+        border: 1px solid #ccc;
+      }
+
+      ul li:hover > ul {
+        display: block;
+      }
+
+      ul > li ul ul {
+        left: 200px;
+        top: -1px;
+      }
+
+      ul > li ul li {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        float: none;
+        height: auto;
+      }
+
+      ul > li ul li a {
+        padding: 10px 20px;
+        color: #505050;
+        text-decoration: none;
+        display: block;
+      }
+
+      ul > li ul li a:hover,
+      ul > li ul li:hover > a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #f26c4f;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Strona główna</a></li>
+      <li>
+        <a href="#">Newsy</a>
+        <ul>
+          <li><a href="#">Internet</a></li>
+          <li>
+            <a href="#">Sprzęt</a>
+            <ul>
+              <li><a href="#">Komputery</a></li>
+              <li><a href="#">Tablety</a></li>
+              <li><a href="#">Telefony</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Oprogramowanie</a></li>
+          <li><a href="#">Wydarzenia</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Programowanie</a>
+        <ul>
+          <li><a href="#">C++</a></li>
+          <li><a href="#">C#</a></li>
+          <li><a href="#">Java</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Poradniki</a>
+        <ul>
+          <li>
+            <a href="#">CMS</a>
+            <ul>
+              <li><a href="#">Drupal</a></li>
+              <li><a href="#">Joomla</a></li>
+              <li><a href="#">WordPress</a></li>
+            </ul>
+          </li>
+          <li><a href="#">HTML 5</a></li>
+          <li><a href="#">CSS 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </body>
+</html>
