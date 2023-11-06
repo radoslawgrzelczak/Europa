@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Julity Krogulskiej</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans" />
+    <style>
+        /* Dodaj tu style CSS, które chciałabyś zastosować na stronie */
+        /* Na przykład tło, kolory, czcionki itp. */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #6C7A89, #394240); /* Tło strony - gradient kolorów */
+            color: #FAD02E; /* Kolor tekstu */
+        }
+        header {
+            background-image: url('obrazek.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            animation: backgroundAnimation 15s infinite alternate;
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background-color: #FF7F50; /* Koralowy kolor */
+            }
+            100% {
+                background-color: #48D1CC; /* Turkusowy kolor */
+            }
+        }
+
+        /* Reszta stylów */
+        .centered-heading {
+            text-align: center;
+            font-size: 36px;
+            cursor: pointer;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .centered-heading:hover {
+            transform: scale(1.1); /* Powiększenie tekstu przy najechaniu */
+        }
+        .centered-text {
+            text-align: center;
+            background-color: rgba(138, 43, 226, 0.7); /* Półprzezroczyste tło fioletowe */
+            color: #FFFFFF; /* Biały kolor tekstu */
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .footer-text {
+            text-align: center;
+            animation: textAnimation 3s infinite alternate;
+        }
+
+        @keyframes textAnimation {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .centered-logo {
+            display: block;
+            margin: 0 auto;
+        }
+        /* Dodatkowe style dla nawigacji, np. tła, kolory itp. */
+        nav {
+            background: linear-gradient(45deg, #394240, #6C7A89); /* Gradient tła menu */
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #FAD02E; /* Jasnożółty kolor tekstu */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+            position: relative;
+        }
+        nav ul li a:hover {
+            color: #FF7F50; /* Koralowy kolor tekstu przy najechaniu */
+            transform: scale(1.1); /* Powiększenie tekstu przy najechaniu */
+        }
+        nav ul li a::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(45deg, #FAD02E, #FF7F50); /* Gradient podkreślenia */
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease-in-out;
+        }
+        nav ul li a:hover::before {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        /* Dodatkowe style dla stopki, np. tła, kolory itp. */
+        footer {
+            background: linear-gradient(45deg, #394240, #6C7A89); /* Gradient tła stopki */
+            color: #FAD02E; /* Jasnożółty kolor tekstu w stopce */
+            padding: 20px 0;
+        }
+        .info
+        .info {
+            background-color: rgba(138, 43, 226, 0.7); /* Półprzezroczyste tło fioletowe */
+            color: #FFFFFF; /* Biały kolor tekstu w bloku informacji w stopce */
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        /* Cień dla tekstu w treści strony */
+        .centered-text {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav>
+        <ul>
+            <li><a href="https://drive.google.com/drive/folders/1pHTFCm9oX3Lx--JUAGuThZINNSfClnLG?usp=sharing">Strona główna</a></li>
+            <li><a href="#">Inne prace</a>
+                <ul>
+                    <li><a href="styl_nav.css">styl_nav</a></li>
+                    <li><a href="wakacje_strona.html">wakacje strona</a>
+                        <ul>
+                            <li><a href="styl_nav1.css">styl_nav1</a></li>
+                            <li><a href="html_5.html">html 5</a></li>
+                            <li><a href="styl.css">styl</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="szyszka.html">szyszka</a></li>
+                    <li><a href="#">moja strona</a></li>
+                </ul>
+            </li>
+            <li><a href="strona_kuby.html">Strona Kuby</a></li>
+                <ul>
+                    <li><a href="#">C++</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Kontakt</a>
+                <ul>
+                    <li><a href="mailto:julitakrogulska1c2021@gmail.com">julitakrogulska1c2021@gmail.com</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1 class="centered-heading">Miło Cię widzieć na mojej stronie!</h1>
+        <p class="centered-text">Znajdziesz tu informacje o mnie i moich innych pracach. Zapraszam do sprawdzenia!
+        Jestem osobą, która uwielbia pogrążać się w zachwycie światem natury, moim ulubionym miejscem, które odwiedzam od lat jest wieś Czorsztyn, w górach Pieninach,
+        niedaleko pięknych polskich Tatr.
+        Poniżej znajdziesz informacje dotyczące Czorsztyna.</p>
+    </div>
+    <footer>
+        <p class="footer-text">Julita Krogulska</p>
+        <img src="logo.jfif" alt="Logo" class="centered-logo" />
+        <div class="info">
+            <h2>Czorsztyn informacje</h2>
+            <ul>
+                <li><a href="https://czorsztyn.pl">Gmina Czorsztyn</a></li>
+                <li>Liczba mieszkańców: 500</li>
+                <li>Powiat: Nowotarski</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

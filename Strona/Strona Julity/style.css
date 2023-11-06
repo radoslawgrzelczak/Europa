@@ -1,0 +1,134 @@
+/* Resetowanie domyślnego marginesu i wypełnienia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stylizacja dla nawigacji */
+nav ul {
+    list-style: none;
+    background-color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #ff6600;
+}
+
+/* Stylizacja dla submenu */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    display: block;
+}
+
+nav ul li ul li a {
+    padding: 12px 20px;
+}
+
+/* Stylizacja dla nagłówka */
+header {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Stylizacja dla treści */
+.content {
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+/* Stylizacja dla obrazka */
+img.left {
+    float: left;
+    margin-right: 20px;
+}
+
+/* Dostosowanie tła całej strony */
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+}
+
+/* Dostosowanie stopki */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+/* Stylizacja dla napisu na dole strony */
+.footer-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+/* Stylizacja dla informacji pod obrazkiem */
+.info {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.info h2 {
+    font-size: 20px;
+}
+
+.info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.centered-heading {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    color: #333;
+}.centered-text {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}

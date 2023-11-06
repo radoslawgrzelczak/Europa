@@ -1,0 +1,70 @@
+ul /*główny poziom*/
+{
+     list-style: none;
+}
+ul > li {
+     float: left;
+}
+ul > li {
+     margin: 0;
+     padding: 0;
+     float: left; 
+     position: relative;
+     height: 30px;
+}
+ul > li > a {
+     padding: 10px; 
+     color: #444;
+     text-decoration: none;
+}ul > li > a { 		/*linki pierwszego poziomu*/
+     padding: 10px; 
+     color: #444;
+     text-decoration: none; /*usnięcie podkreśleń*/
+	 
+}
+ul > li ul { 			/*elementy trzeciego poziomu*/
+     padding: 0;
+     position: absolute; 
+     display: none; 
+     left: 0px; 
+     top: 30px; 
+     width: 200px; 
+     text-align: left;
+     background-color: #fcfcfc;
+     border: 1px solid #ccc;
+}
+ul > li ul li a { 		/*linki elementów trzeciego poziomu*/
+     padding: 10px 20px; 
+     color: #505050; 
+     text-decoration: none;
+     display: block;
+}
+ul {
+float: left;
+width: 100%;
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+li a {
+display: block;
+float: left;
+text-align: center;
+font-size: 1.2em;
+width: 130px;
+text-decoration: none;
+color: aqua;
+background-color: blue;
+padding: 10px 15px;
+margin: 0px 1px 1px 0px;
+border: 1px solid navy;
+border-radius: 3px;
+box-shadow: 0px 2px 3px gray;
+}
+
+li a:hover {
+color: blue;
+background: aqua;
+border: 1px solid blue;
+}
